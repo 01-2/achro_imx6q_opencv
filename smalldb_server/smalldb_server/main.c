@@ -71,10 +71,23 @@ int main(void){
             strcpy(buff_snd, "REG DUP OK");
             write(client_socket, buff_snd, strlen(buff_snd)+1);
         }
-        
+
         if(0 == strcmp(buff_rcv, "REQ CONFIG")){
             strcpy(buff_snd, "CP33004 0900 1300 40");
             write(client_socket, buff_snd, strlen(buff_snd)+1);
+        }
+        
+        if(0 == strcmp(buff_rcv, "REQ ATT")){
+            strcpy(buff_snd, "REQ ATT OK");
+            write(client_socket, buff_snd, strlen(buff_snd)+1);
+            
+            read(client_socket, buff_rcv, BUFF_SIZE);
+            printf("receive: %s\n", buff_rcv);
+            
+            if(0 == strcmp(buff_rcv, "201324459")){
+                strcpy(buff_snd, "012");
+                write(client_socket, buff_snd, strlen(buff_snd)+1);
+            }
         }
         if(0 == strcmp(buff_rcv, "EXIT")) break;
     }

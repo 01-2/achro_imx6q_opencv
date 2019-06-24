@@ -24,17 +24,16 @@
 using namespace std;
 using namespace cv;
 
-
 typedef struct{
     int hour;
     int min;
 }custom_time;
 
 typedef struct{
-    char s_code[7];      // subject code
-    custom_time s_time; // 수업 시작 시간
-    custom_time f_time; // 수업 종료 시간
-    int s_num;          // number of students
+    char s_code[7];         // subject code
+    custom_time s_time;     // 수업 시작 시간
+    custom_time f_time;     // 수업 종료 시간
+    int s_num;              // number of students
 }conf_data;
 
 typedef struct{
@@ -210,7 +209,7 @@ int reg_mode(int s_sockfd){
     char usr_name[MAXLINE];
 
     if(-1 == write(s_sockfd, req_msg, strlen(req_msg)+1)){
-        cout << "[ERROR] REQUEST REGISTRATION MODE FAILD" << endl;
+        cout << "[ERROR] REQUEST REGISTRATION MODE FAILED" << endl;
         return -1;
     }
     if((-1 == read(s_sockfd, recv_msg, 11)) && (0 != strncmp(recv_msg, "REG MODE OK", 11))){
@@ -235,23 +234,84 @@ int reg_mode(int s_sockfd){
     }
     
     // registration function
-    
+    // getUserImage();
+    // train();
     return 1;
 }
 int att_mode(int s_sockfd){
+    // checking attandance about 1 minute
+    clock_t delay = 60 * CLOCKS_PER_SEC;
+    clock_t start = clock();
     
+    char req_msg[] = "REQ ATT";
+    char recv_msg[MAXLINE];
+    
+    if(-1 == write(s_sockfd, req_msg, strlen(req_msg)+1)){
+        cout << "[ERROR] REQUEST ATTANDANCE CHECK MODE FAILED" << endl;
+        return -1;
+    }
+    if((-1 == read(s_sockfd, recv_msg, 10)) && (0 != strncmp(recv_msg, "REQ ATT OK", 10))){
+        cout << "[ERROR] RECEIVE CHECK SIGN FAILED" << endl;
+        return -1;
+    }
+    
+    strncpy(req_msg, "201324459", 10);
+    if(-1 == write(s_sockfd, req_msg, strlen(req_msg)+1)){
+        cout << "[ERROR] REQUEST ATTANDANCE CHECK MODE FAILED" << endl;
+        return -1;
+    }
+    if((-1 == read(s_sockfd, recv_msg, 10))){
+        cout << "[ERROR] RECEIVE STUDENT NAME FAILED" << endl;
+        return -1;
+    }
+    cout << recv_msg << endl;
+    
+//    while((clock() - start) < delay){
+
+//        cap >> inp;
+//        imshow("window", inp);
+//        vector <Mat> out = faceDetect(inp);
+//
+//        if(!out.empty()){
+//            Mat res;
+//            cvtColor(out[0], res, COLOR_BGR2GRAY);
+//
+//            int label = -1;
+//            double confidence;
+//            model->predict(res, label, confidence);
+//
+//            string display = to_string(confidence) + "% Confience it is user";
+//
+//            putText(inp, display, Point(100, 120), FONT_HERSHEY_COMPLEX, 1.2, Scalar::all(255));
+    
+//            // label을 청구했을 때 이름 string 가져올 것
+//            if(label == 40){
+//                putText(inp, "Dohyeon", Point(250,450), FONT_HERSHEY_COMPLEX, 1.2, Scalar(0,255,0));
+//                imshow("facedetection", inp);
+//            }
+//            else if (label == 50){
+//                putText(inp, "012", Point(250,450), FONT_HERSHEY_COMPLEX, 1.2, Scalar(0,255,0));
+//                imshow("facedetection", inp);
+//            }
+//            else{
+//                putText(inp, "unknown", Point(250,450), FONT_HERSHEY_COMPLEX, 1.2, Scalar(0,255,0));
+//                imshow("facedetection", inp);
+//            }
+//        }
+//        else{
+//            // cout << "face not detected" << endl;
+//            putText(inp, "face not found", Point(250,450), FONT_HERSHEY_COMPLEX, 1.2, Scalar(0,255,0));
+//            imshow("facedetection", inp);
+//        }
+//
+//        if(waitKey(25) >= 0) break;
+//    }
     return 1;
 }
 int main(int argc, char **argv){
-    /*
-     Initialize
-     */
     struct sockaddr_in serveraddr;
     int server_sockfd, client_len, menu_selector;
-    char buf[MAXLINE];
 
-    // 올렸던 변수들 자리
-    
     // if(!cap.isOpened()) cerr << "can't open camera device" << endl;
 
     if((server_sockfd = socket(AF_INET, SOCK_STREAM, 0)) == -1) {
@@ -278,7 +338,7 @@ int main(int argc, char **argv){
                 reg_mode(server_sockfd);
                 break;
             case 2: // ATTANDANCE CHECK
-                
+                att_mode(server_sockfd);
                 break;
             case 3: // CONFIGRATION MODE
                 if(-1 != config_mode(server_sockfd)){
@@ -301,60 +361,6 @@ int main(int argc, char **argv){
         }
     }while(menu_selector != 4);
     
-//    getUserImage();
-//    train();
-//    while(1){
-//        cap >> inp;
-//        imshow("window", inp);
-//        vector <Mat> out = faceDetect(inp);
-//
-//        if(!out.empty()){
-//            Mat res;
-//            cvtColor(out[0], res, COLOR_BGR2GRAY);
-//
-//            int label = -1;
-//            double confidence;
-//            model->predict(res, label, confidence);
-//
-//            string display = to_string(confidence) + "% Confience it is user";
-//
-//            putText(inp, display, Point(100, 120), FONT_HERSHEY_COMPLEX, 1.2, Scalar::all(255));
-//            // label을 청구했을 때 이름 string 가져올 것
-//            if(label == 40){
-//                putText(inp, "Dohyeon", Point(250,450), FONT_HERSHEY_COMPLEX, 1.2, Scalar(0,255,0));
-//                imshow("facedetection", inp);
-//            }
-//            else if (label == 50){
-//                putText(inp, "012", Point(250,450), FONT_HERSHEY_COMPLEX, 1.2, Scalar(0,255,0));
-//                imshow("facedetection", inp);
-//            }
-//            else{
-//                putText(inp, "unknown", Point(250,450), FONT_HERSHEY_COMPLEX, 1.2, Scalar(0,255,0));
-//                imshow("facedetection", inp);
-//            }
-//        }
-//        else{
-//            // cout << "face not detected" << endl;
-//            putText(inp, "face not found", Point(250,450), FONT_HERSHEY_COMPLEX, 1.2, Scalar(0,255,0));
-//            imshow("facedetection", inp);
-//        }
-//
-//        if(waitKey(25) >= 0) break;
-//    }
-    
-    memset(buf, 0x00, MAXLINE);
-    read(0, buf, MAXLINE);
-    if(write(server_sockfd, buf, MAXLINE) <= 0) {
-        perror("write error : ");
-        return 1;
-    }
-    memset(buf, 0x00, MAXLINE);
-    if(read(server_sockfd, buf, MAXLINE) <= 0) {
-        perror("read error: ");
-        return 1;
-    }
     close(server_sockfd);
-    printf("server:%s\n", buf);
-
     return 0;
 }
