@@ -37,6 +37,11 @@ typedef struct{
     int s_num;          // number of students
 }conf_data;
 
+typedef struct{
+    int label;
+    char name[MAXLINE];
+}user_data;
+
 // VideoCapture cap(0);
 // Mat inp;
 auto model = face::LBPHFaceRecognizer::create();
@@ -197,7 +202,46 @@ int config_mode(int s_sockfd){
 
     return 1;
 }
+int reg_mode(int s_sockfd){
+    char req_msg[] = "REQ REG";
+    char recv_msg[MAXLINE];
+    
+    int student_num = 0;
+    char usr_name[MAXLINE];
 
+    if(-1 == write(s_sockfd, req_msg, strlen(req_msg)+1)){
+        cout << "[ERROR] REQUEST REGISTRATION MODE FAILD" << endl;
+        return -1;
+    }
+    if((-1 == read(s_sockfd, recv_msg, 11)) && (0 != strncmp(recv_msg, "REG MODE OK", 11))){
+        cout << "[ERROR] RECEIVE REG OK MSG FAILED" << endl;
+        return -1;
+    }
+    
+    cout << "[INPUT] USER STUDENT NUM : ";
+    cin >> student_num;
+    cout << "[INPUT] USER NAME : ";
+    cin >> usr_name;
+    
+    sprintf(req_msg, "%d %s", student_num, usr_name);
+    
+    if(-1 == write(s_sockfd, req_msg, strlen(req_msg)+1)){
+        cout << "[ERROR] SEND USER INFO ERROR" << endl;
+        return -1;
+    }
+    if((-1 == read(s_sockfd, recv_msg, 10)) && (0 == strncmp(recv_msg, "REG DUPLICATED", 14))){
+        cout << "[ERROR] REG DUPLICATED" << endl;
+        return -1;
+    }
+    
+    // registration function
+    
+    return 1;
+}
+int att_mode(int s_sockfd){
+    
+    return 1;
+}
 int main(int argc, char **argv){
     /*
      Initialize
@@ -231,8 +275,10 @@ int main(int argc, char **argv){
         cin >> menu_selector;
         switch(menu_selector){
             case 1: // REGISTRATION MODE
+                reg_mode(server_sockfd);
                 break;
             case 2: // ATTANDANCE CHECK
+                
                 break;
             case 3: // CONFIGRATION MODE
                 if(-1 != config_mode(server_sockfd)){

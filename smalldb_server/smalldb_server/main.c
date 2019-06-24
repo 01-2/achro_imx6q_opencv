@@ -58,8 +58,19 @@ int main(void){
             exit(1);
         }
         
-        read (client_socket, buff_rcv, BUFF_SIZE);
+        read(client_socket, buff_rcv, BUFF_SIZE);
         printf("receive: %s\n", buff_rcv);
+        
+        if(0 == strcmp(buff_rcv, "REQ REG")){
+            strcpy(buff_snd, "REG MODE OK");
+            write(client_socket, buff_snd, strlen(buff_snd)+1);
+            
+            read(client_socket, buff_rcv, BUFF_SIZE);
+            printf("receive: %s\n", buff_rcv);
+            
+            strcpy(buff_snd, "REG DUP OK");
+            write(client_socket, buff_snd, strlen(buff_snd)+1);
+        }
         
         if(0 == strcmp(buff_rcv, "REQ CONFIG")){
             strcpy(buff_snd, "CP33004 0900 1300 40");
