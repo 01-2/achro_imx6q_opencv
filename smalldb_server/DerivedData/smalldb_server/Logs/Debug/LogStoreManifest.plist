@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>A301B47D-CCF0-488B-AFF3-6F5C9A243D82</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>A301B47D-CCF0-488B-AFF3-6F5C9A243D82.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>smalldb_server project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>smalldb_server</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug smalldb_server</string>
+			<key>timeStartedRecording</key>
+			<real>582796083.59518301</real>
+			<key>timeStoppedRecording</key>
+			<real>582796110.28638697</real>
+			<key>title</key>
+			<string>Debug smalldb_server</string>
+			<key>uniqueIdentifier</key>
+			<string>A301B47D-CCF0-488B-AFF3-6F5C9A243D82</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

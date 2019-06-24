@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>1948B5A3-1D10-414B-808E-3B66941D0A6C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1948B5A3-1D10-414B-808E-3B66941D0A6C.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>face_recognition project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>face_recognition</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build face_recognition</string>
+			<key>timeStartedRecording</key>
+			<real>582971914.14169204</real>
+			<key>timeStoppedRecording</key>
+			<real>582971915.99009502</real>
+			<key>title</key>
+			<string>Build face_recognition</string>
+			<key>uniqueIdentifier</key>
+			<string>1948B5A3-1D10-414B-808E-3B66941D0A6C</string>
+		</dict>
+		<key>1EEEF22B-2413-42C7-B231-1A67E1301708</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1EEEF22B-2413-42C7-B231-1A67E1301708.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>face_recognition project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>face_recognition</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build face_recognition</string>
+			<key>timeStartedRecording</key>
+			<real>583047668.23809302</real>
+			<key>timeStoppedRecording</key>
+			<real>583047670.04382896</real>
+			<key>title</key>
+			<string>Build face_recognition</string>
+			<key>uniqueIdentifier</key>
+			<string>1EEEF22B-2413-42C7-B231-1A67E1301708</string>
+		</dict>
+		<key>22CD5967-8007-4FCC-8D85-81080DE4B257</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>22CD5967-8007-4FCC-8D85-81080DE4B257.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>face_recognition project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>face_recognition</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build face_recognition</string>
+			<key>timeStartedRecording</key>
+			<real>582968960.22977698</real>
+			<key>timeStoppedRecording</key>
+			<real>582968960.33006299</real>
+			<key>title</key>
+			<string>Build face_recognition</string>
+			<key>uniqueIdentifier</key>
+			<string>22CD5967-8007-4FCC-8D85-81080DE4B257</string>
+		</dict>
+		<key>2A3580D3-2DCE-4BCA-8389-79519E7EE802</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>2A3580D3-2DCE-4BCA-8389-79519E7EE802.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>face_recognition project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>face_recognition</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build face_recognition</string>
+			<key>timeStartedRecording</key>
+			<real>582969256.25963497</real>
+			<key>timeStoppedRecording</key>
+			<real>582969258.13470304</real>
+			<key>title</key>
+			<string>Build face_recognition</string>
+			<key>uniqueIdentifier</key>
+			<string>2A3580D3-2DCE-4BCA-8389-79519E7EE802</string>
+		</dict>
+		<key>36402CE5-3F21-4AFE-A23E-8FFF0351FBC5</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>36402CE5-3F21-4AFE-A23E-8FFF0351FBC5.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>face_recognition project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>face_recognition</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build face_recognition</string>
+			<key>timeStartedRecording</key>
+			<real>582969111.740026</real>
+			<key>timeStoppedRecording</key>
+			<real>582969113.20971799</real>
+			<key>title</key>
+			<string>Build face_recognition</string>
+			<key>uniqueIdentifier</key>
+			<string>36402CE5-3F21-4AFE-A23E-8FFF0351FBC5</string>
+		</dict>
+		<key>3DE35030-E778-4F80-B680-E376B8AE7E57</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3DE35030-E778-4F80-B680-E376B8AE7E57.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>face_recognition project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>face_recognition</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build face_recognition</string>
+			<key>timeStartedRecording</key>
+			<real>582969125.57708204</real>
+			<key>timeStoppedRecording</key>
+			<real>582969127.48307204</real>
+			<key>title</key>
+			<string>Build face_recognition</string>
+			<key>uniqueIdentifier</key>
+			<string>3DE35030-E778-4F80-B680-E376B8AE7E57</string>
+		</dict>
+		<key>41F82E3D-2E63-41AF-B9D6-C0F13D6D27BE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>41F82E3D-2E63-41AF-B9D6-C0F13D6D27BE.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>face_recognition project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>face_recognition</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build face_recognition</string>
+			<key>timeStartedRecording</key>
+			<real>582968998.06923997</real>
+			<key>timeStoppedRecording</key>
+			<real>582968998.12178504</real>
+			<key>title</key>
+			<string>Build face_recognition</string>
+			<key>uniqueIdentifier</key>
+			<string>41F82E3D-2E63-41AF-B9D6-C0F13D6D27BE</string>
+		</dict>
+		<key>56A12AAF-F2C1-441B-A3CA-54D663AB0F91</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>56A12AAF-F2C1-441B-A3CA-54D663AB0F91.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>face_recognition project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>face_recognition</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build face_recognition</string>
+			<key>timeStartedRecording</key>
+			<real>582969169.74984097</real>
+			<key>timeStoppedRecording</key>
+			<real>582969171.60996902</real>
+			<key>title</key>
+			<string>Build face_recognition</string>
+			<key>uniqueIdentifier</key>
+			<string>56A12AAF-F2C1-441B-A3CA-54D663AB0F91</string>
+		</dict>
+		<key>58724AA3-9849-410C-86C5-74F15E5E08F7</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>58724AA3-9849-410C-86C5-74F15E5E08F7.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>face_recognition project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>face_recognition</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build face_recognition</string>
+			<key>timeStartedRecording</key>
+			<real>582969098.775406</real>
+			<key>timeStoppedRecording</key>
+			<real>582969100.28809905</real>
+			<key>title</key>
+			<string>Build face_recognition</string>
+			<key>uniqueIdentifier</key>
+			<string>58724AA3-9849-410C-86C5-74F15E5E08F7</string>
+		</dict>
+		<key>6605A5CD-D1C5-4005-82F0-1268C27BE500</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6605A5CD-D1C5-4005-82F0-1268C27BE500.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>face_recognition project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>face_recognition</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build face_recognition</string>
+			<key>timeStartedRecording</key>
+			<real>582968992.21418297</real>
+			<key>timeStoppedRecording</key>
+			<real>582968994.16802204</real>
+			<key>title</key>
+			<string>Build face_recognition</string>
+			<key>uniqueIdentifier</key>
+			<string>6605A5CD-D1C5-4005-82F0-1268C27BE500</string>
+		</dict>
+		<key>6C200E60-5528-4AA9-9930-1C3B572A234F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6C200E60-5528-4AA9-9930-1C3B572A234F.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>face_recognition project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>face_recognition</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build face_recognition</string>
+			<key>timeStartedRecording</key>
+			<real>582968761.64582801</real>
+			<key>timeStoppedRecording</key>
+			<real>582968764.91456997</real>
+			<key>title</key>
+			<string>Build face_recognition</string>
+			<key>uniqueIdentifier</key>
+			<string>6C200E60-5528-4AA9-9930-1C3B572A234F</string>
+		</dict>
+		<key>87BF0F9D-A7B1-4CF1-9DAC-6051DFBA62C3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>87BF0F9D-A7B1-4CF1-9DAC-6051DFBA62C3.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>face_recognition project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>face_recognition</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build face_recognition</string>
+			<key>timeStartedRecording</key>
+			<real>583042697.81202102</real>
+			<key>timeStoppedRecording</key>
+			<real>583042700.27159798</real>
+			<key>title</key>
+			<string>Build face_recognition</string>
+			<key>uniqueIdentifier</key>
+			<string>87BF0F9D-A7B1-4CF1-9DAC-6051DFBA62C3</string>
+		</dict>
+		<key>9985F719-20D4-42B9-A1B6-2C5B06F57D75</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9985F719-20D4-42B9-A1B6-2C5B06F57D75.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>face_recognition project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>face_recognition</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build face_recognition</string>
+			<key>timeStartedRecording</key>
+			<real>582972113.41165602</real>
+			<key>timeStoppedRecording</key>
+			<real>582972115.35178006</real>
+			<key>title</key>
+			<string>Build face_recognition</string>
+			<key>uniqueIdentifier</key>
+			<string>9985F719-20D4-42B9-A1B6-2C5B06F57D75</string>
+		</dict>
+		<key>B7A73321-CDBE-48A8-910D-6AA43CEE0604</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B7A73321-CDBE-48A8-910D-6AA43CEE0604.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>face_recognition project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>face_recognition</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build face_recognition</string>
+			<key>timeStartedRecording</key>
+			<real>582971585.512815</real>
+			<key>timeStoppedRecording</key>
+			<real>582971587.701738</real>
+			<key>title</key>
+			<string>Build face_recognition</string>
+			<key>uniqueIdentifier</key>
+			<string>B7A73321-CDBE-48A8-910D-6AA43CEE0604</string>
+		</dict>
+		<key>C3A166A5-6376-4970-B66B-DBB77D41E206</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C3A166A5-6376-4970-B66B-DBB77D41E206.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>face_recognition project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>face_recognition</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build face_recognition</string>
+			<key>timeStartedRecording</key>
+			<real>582969329.56849802</real>
+			<key>timeStoppedRecording</key>
+			<real>582969331.39836705</real>
+			<key>title</key>
+			<string>Build face_recognition</string>
+			<key>uniqueIdentifier</key>
+			<string>C3A166A5-6376-4970-B66B-DBB77D41E206</string>
+		</dict>
+		<key>D637D141-6AF5-4F58-9F7B-BBD924C0CCD4</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D637D141-6AF5-4F58-9F7B-BBD924C0CCD4.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>face_recognition project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>face_recognition</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build face_recognition</string>
+			<key>timeStartedRecording</key>
+			<real>582971597.51951802</real>
+			<key>timeStoppedRecording</key>
+			<real>582971599.48901904</real>
+			<key>title</key>
+			<string>Build face_recognition</string>
+			<key>uniqueIdentifier</key>
+			<string>D637D141-6AF5-4F58-9F7B-BBD924C0CCD4</string>
+		</dict>
+		<key>EB1B9E44-90AE-47C0-A162-27BEC1587CB3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>EB1B9E44-90AE-47C0-A162-27BEC1587CB3.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>face_recognition project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>face_recognition</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build face_recognition</string>
+			<key>timeStartedRecording</key>
+			<real>582968782.83248997</real>
+			<key>timeStoppedRecording</key>
+			<real>582968784.23438799</real>
+			<key>title</key>
+			<string>Build face_recognition</string>
+			<key>uniqueIdentifier</key>
+			<string>EB1B9E44-90AE-47C0-A162-27BEC1587CB3</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>7754FABD-5464-49B5-957A-BF617376FCB9</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
+			<key>fileName</key>
+			<string>7754FABD-5464-49B5-957A-BF617376FCB9.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>face_recognition-efuvbcdgrfavkkfchlpnbhskuqka</string>
+			<key>timeStartedRecording</key>
+			<real>583047668.27991796</real>
+			<key>timeStoppedRecording</key>
+			<real>583047670.03128898</real>
+			<key>title</key>
+			<string>Build target face_recognition</string>
+			<key>uniqueIdentifier</key>
+			<string>7754FABD-5464-49B5-957A-BF617376FCB9</string>
+		</dict>
+	</dict>
+	<key>preserveOldLogs</key>
+	<true/>
+</dict>
+</plist>
