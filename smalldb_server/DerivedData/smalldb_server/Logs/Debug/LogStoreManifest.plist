@@ -6,6 +6,134 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
+		<key>2CC10716-ED40-4B50-8F98-FA26EDA8F299</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>2CC10716-ED40-4B50-8F98-FA26EDA8F299.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>smalldb_server project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>smalldb_server</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug smalldb_server</string>
+			<key>timeStartedRecording</key>
+			<real>583054661.80759299</real>
+			<key>timeStoppedRecording</key>
+			<real>583054716.96485698</real>
+			<key>title</key>
+			<string>Debug smalldb_server</string>
+			<key>uniqueIdentifier</key>
+			<string>2CC10716-ED40-4B50-8F98-FA26EDA8F299</string>
+		</dict>
+		<key>78026852-7AEA-4784-A407-921977222FD5</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>78026852-7AEA-4784-A407-921977222FD5.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>smalldb_server project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>smalldb_server</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug smalldb_server</string>
+			<key>timeStartedRecording</key>
+			<real>583053455.90840006</real>
+			<key>timeStoppedRecording</key>
+			<real>583053494.40368295</real>
+			<key>title</key>
+			<string>Debug smalldb_server</string>
+			<key>uniqueIdentifier</key>
+			<string>78026852-7AEA-4784-A407-921977222FD5</string>
+		</dict>
+		<key>85AC7499-F4AC-48C1-9AC1-BEC15ACBFF2C</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>85AC7499-F4AC-48C1-9AC1-BEC15ACBFF2C.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>smalldb_server project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>smalldb_server</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug smalldb_server</string>
+			<key>timeStartedRecording</key>
+			<real>583054878.51004303</real>
+			<key>timeStoppedRecording</key>
+			<real>583054955.71054697</real>
+			<key>title</key>
+			<string>Debug smalldb_server</string>
+			<key>uniqueIdentifier</key>
+			<string>85AC7499-F4AC-48C1-9AC1-BEC15ACBFF2C</string>
+		</dict>
+		<key>965754EF-B1B7-423F-81AB-52DF9C94291D</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>965754EF-B1B7-423F-81AB-52DF9C94291D.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>smalldb_server project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>smalldb_server</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug smalldb_server</string>
+			<key>timeStartedRecording</key>
+			<real>583053346.46792996</real>
+			<key>timeStoppedRecording</key>
+			<real>583053371.240237</real>
+			<key>title</key>
+			<string>Debug smalldb_server</string>
+			<key>uniqueIdentifier</key>
+			<string>965754EF-B1B7-423F-81AB-52DF9C94291D</string>
+		</dict>
 		<key>A301B47D-CCF0-488B-AFF3-6F5C9A243D82</key>
 		<dict>
 			<key>className</key>
@@ -37,6 +165,102 @@
 			<string>Debug smalldb_server</string>
 			<key>uniqueIdentifier</key>
 			<string>A301B47D-CCF0-488B-AFF3-6F5C9A243D82</string>
+		</dict>
+		<key>C0B42228-B78A-4B51-A03E-9F00082D9D0F</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>C0B42228-B78A-4B51-A03E-9F00082D9D0F.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>smalldb_server project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>smalldb_server</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug smalldb_server</string>
+			<key>timeStartedRecording</key>
+			<real>583053447.25211096</real>
+			<key>timeStoppedRecording</key>
+			<real>583053454.59076905</real>
+			<key>title</key>
+			<string>Debug smalldb_server</string>
+			<key>uniqueIdentifier</key>
+			<string>C0B42228-B78A-4B51-A03E-9F00082D9D0F</string>
+		</dict>
+		<key>D8265671-695B-4B61-8717-24FBDC7ADB86</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>D8265671-695B-4B61-8717-24FBDC7ADB86.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>smalldb_server project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>smalldb_server</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug smalldb_server</string>
+			<key>timeStartedRecording</key>
+			<real>583054723.45972502</real>
+			<key>timeStoppedRecording</key>
+			<real>583054878.70983303</real>
+			<key>title</key>
+			<string>Debug smalldb_server</string>
+			<key>uniqueIdentifier</key>
+			<string>D8265671-695B-4B61-8717-24FBDC7ADB86</string>
+		</dict>
+		<key>D8378641-4750-4513-A9DB-586548E572AD</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>D8378641-4750-4513-A9DB-586548E572AD.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>smalldb_server project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>smalldb_server</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug smalldb_server</string>
+			<key>timeStartedRecording</key>
+			<real>583053112.12249899</real>
+			<key>timeStoppedRecording</key>
+			<real>583053230.92105198</real>
+			<key>title</key>
+			<string>Debug smalldb_server</string>
+			<key>uniqueIdentifier</key>
+			<string>D8378641-4750-4513-A9DB-586548E572AD</string>
 		</dict>
 	</dict>
 </dict>

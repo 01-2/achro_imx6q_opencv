@@ -61,8 +61,11 @@ int main(void){
         read (client_socket, buff_rcv, BUFF_SIZE);
         printf("receive: %s\n", buff_rcv);
         
-        sprintf(buff_snd, "%lu : %s", strlen(buff_rcv), buff_rcv);
-        write(client_socket, buff_snd, strlen(buff_snd)+1);          
-        close(client_socket);
+        if(0 == strcmp(buff_rcv, "REQ CONFIG")){
+            strcpy(buff_snd, "CP33004 0900 1300 40");
+            write(client_socket, buff_snd, strlen(buff_snd)+1);
+        }
+        if(0 == strcmp(buff_rcv, "EXIT")) break;
     }
+    close(client_socket);
 }

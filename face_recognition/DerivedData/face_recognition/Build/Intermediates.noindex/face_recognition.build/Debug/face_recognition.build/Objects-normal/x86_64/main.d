@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/yiseo/my_code/face_recognition/face_recognition/main.cpp \
+  /Users/yiseo/repository/achro_imx6q_opencv/face_recognition/face_recognition/main.cpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/opencv.hpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/opencv_modules.hpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/core.hpp \

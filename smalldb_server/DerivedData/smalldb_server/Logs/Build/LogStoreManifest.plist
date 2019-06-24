@@ -6,6 +6,70 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
+		<key>504F5DE5-5D6A-40B4-934C-10D23BD2B1E6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>504F5DE5-5D6A-40B4-934C-10D23BD2B1E6.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>smalldb_server project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>smalldb_server</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build smalldb_server</string>
+			<key>timeStartedRecording</key>
+			<real>583053052.01650596</real>
+			<key>timeStoppedRecording</key>
+			<real>583053052.07524896</real>
+			<key>title</key>
+			<string>Build smalldb_server</string>
+			<key>uniqueIdentifier</key>
+			<string>504F5DE5-5D6A-40B4-934C-10D23BD2B1E6</string>
+		</dict>
+		<key>5674DDDD-422F-4BA9-A7E1-280093E48DD1</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5674DDDD-422F-4BA9-A7E1-280093E48DD1.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>smalldb_server project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>smalldb_server</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build smalldb_server</string>
+			<key>timeStartedRecording</key>
+			<real>583054878.48441195</real>
+			<key>timeStoppedRecording</key>
+			<real>583054878.55932605</real>
+			<key>title</key>
+			<string>Build smalldb_server</string>
+			<key>uniqueIdentifier</key>
+			<string>5674DDDD-422F-4BA9-A7E1-280093E48DD1</string>
+		</dict>
 		<key>7DBF2F99-F784-4B19-B746-FCCF0C86E968</key>
 		<dict>
 			<key>className</key>
@@ -37,6 +101,294 @@
 			<string>Build smalldb_server</string>
 			<key>uniqueIdentifier</key>
 			<string>7DBF2F99-F784-4B19-B746-FCCF0C86E968</string>
+		</dict>
+		<key>7F8D564B-9030-4572-8B95-13022EE7894C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7F8D564B-9030-4572-8B95-13022EE7894C.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>smalldb_server project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>smalldb_server</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build smalldb_server</string>
+			<key>timeStartedRecording</key>
+			<real>583054661.64997399</real>
+			<key>timeStoppedRecording</key>
+			<real>583054661.85895801</real>
+			<key>title</key>
+			<string>Build smalldb_server</string>
+			<key>uniqueIdentifier</key>
+			<string>7F8D564B-9030-4572-8B95-13022EE7894C</string>
+		</dict>
+		<key>862F8E6D-8ECE-4AD6-9EDD-36001B99B2CE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>862F8E6D-8ECE-4AD6-9EDD-36001B99B2CE.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>smalldb_server project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>smalldb_server</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build smalldb_server</string>
+			<key>timeStartedRecording</key>
+			<real>583053346.44013798</real>
+			<key>timeStoppedRecording</key>
+			<real>583053346.52511096</real>
+			<key>title</key>
+			<string>Build smalldb_server</string>
+			<key>uniqueIdentifier</key>
+			<string>862F8E6D-8ECE-4AD6-9EDD-36001B99B2CE</string>
+		</dict>
+		<key>8EF1ACC0-7AAD-4BAD-95D4-D7A04E4E423A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8EF1ACC0-7AAD-4BAD-95D4-D7A04E4E423A.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>smalldb_server project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>smalldb_server</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build smalldb_server</string>
+			<key>timeStartedRecording</key>
+			<real>583053112.09690499</real>
+			<key>timeStoppedRecording</key>
+			<real>583053112.17772305</real>
+			<key>title</key>
+			<string>Build smalldb_server</string>
+			<key>uniqueIdentifier</key>
+			<string>8EF1ACC0-7AAD-4BAD-95D4-D7A04E4E423A</string>
+		</dict>
+		<key>97ED75EB-07C1-445F-9A80-6BED49CC3346</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>97ED75EB-07C1-445F-9A80-6BED49CC3346.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>smalldb_server project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>smalldb_server</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build smalldb_server</string>
+			<key>timeStartedRecording</key>
+			<real>583054723.43334794</real>
+			<key>timeStoppedRecording</key>
+			<real>583054723.51347196</real>
+			<key>title</key>
+			<string>Build smalldb_server</string>
+			<key>uniqueIdentifier</key>
+			<string>97ED75EB-07C1-445F-9A80-6BED49CC3346</string>
+		</dict>
+		<key>B304DF2D-1121-4643-8A81-7B651576ED3B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B304DF2D-1121-4643-8A81-7B651576ED3B.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>smalldb_server project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>smalldb_server</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build smalldb_server</string>
+			<key>timeStartedRecording</key>
+			<real>583053107.74626398</real>
+			<key>timeStoppedRecording</key>
+			<real>583053108.40935194</real>
+			<key>title</key>
+			<string>Build smalldb_server</string>
+			<key>uniqueIdentifier</key>
+			<string>B304DF2D-1121-4643-8A81-7B651576ED3B</string>
+		</dict>
+		<key>C446C5DB-B4BE-4694-A250-C7BFB7C68D15</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C446C5DB-B4BE-4694-A250-C7BFB7C68D15.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>smalldb_server project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>smalldb_server</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build smalldb_server</string>
+			<key>timeStartedRecording</key>
+			<real>583053022.64209199</real>
+			<key>timeStoppedRecording</key>
+			<real>583053022.70585597</real>
+			<key>title</key>
+			<string>Build smalldb_server</string>
+			<key>uniqueIdentifier</key>
+			<string>C446C5DB-B4BE-4694-A250-C7BFB7C68D15</string>
+		</dict>
+		<key>D673742D-DB36-4A62-810D-8108B58A8EA6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D673742D-DB36-4A62-810D-8108B58A8EA6.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>smalldb_server project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>smalldb_server</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build smalldb_server</string>
+			<key>timeStartedRecording</key>
+			<real>583053098.66620696</real>
+			<key>timeStoppedRecording</key>
+			<real>583053098.72599697</real>
+			<key>title</key>
+			<string>Build smalldb_server</string>
+			<key>uniqueIdentifier</key>
+			<string>D673742D-DB36-4A62-810D-8108B58A8EA6</string>
+		</dict>
+		<key>D7B4E3B6-A7D3-4A14-9059-79C61AC7BA3C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D7B4E3B6-A7D3-4A14-9059-79C61AC7BA3C.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>smalldb_server project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>smalldb_server</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build smalldb_server</string>
+			<key>timeStartedRecording</key>
+			<real>583053455.87749195</real>
+			<key>timeStoppedRecording</key>
+			<real>583053455.96138096</real>
+			<key>title</key>
+			<string>Build smalldb_server</string>
+			<key>uniqueIdentifier</key>
+			<string>D7B4E3B6-A7D3-4A14-9059-79C61AC7BA3C</string>
+		</dict>
+		<key>F529230A-060D-41AB-94F0-EF4ADAD97A66</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F529230A-060D-41AB-94F0-EF4ADAD97A66.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>smalldb_server project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>smalldb_server</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build smalldb_server</string>
+			<key>timeStartedRecording</key>
+			<real>583053446.99491405</real>
+			<key>timeStoppedRecording</key>
+			<real>583053447.30887306</real>
+			<key>title</key>
+			<string>Build smalldb_server</string>
+			<key>uniqueIdentifier</key>
+			<string>F529230A-060D-41AB-94F0-EF4ADAD97A66</string>
 		</dict>
 	</dict>
 </dict>
