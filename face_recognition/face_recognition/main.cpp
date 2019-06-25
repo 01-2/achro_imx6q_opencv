@@ -19,6 +19,7 @@
 #define CV_HAAR_SCALE_IMAGE 2
 #define CV_INTER_LINEAR 1
 #define MAXLINE 1024
+#define BUFF_SIZE 1024
 
 using namespace std;
 using namespace cv;
@@ -44,7 +45,7 @@ auto model = face::LBPHFaceRecognizer::create();
 VideoCapture cap(0);
 Mat inp;
 
-string path = "/Users/yiseo/my_code/face_recognition/";
+string path = "/Users/yiseo/repository/achro_imx6q_opencv/face_recognition/";
 ofstream dbout(path + "db.txt", ios::app);
 ConfData sys_ConfData;
 
@@ -104,10 +105,10 @@ void train(){
     vector <int> labels;
     
     try{
-        dbread(path, images, labels);
-        cout << "size of the image is" << images.size() << endl;
+        dbread(train_path, images, labels);
+        cout << "size of the image is " << images.size() << endl;
         cout << "size of labels is " << labels.size() << endl;
-        cout << "Training begins..." << endl;
+        cout << "Training begins... " << endl;
     }catch(cv::Exception& e){
         cerr << e.msg << endl;
         exit(1);
@@ -133,8 +134,7 @@ void getUserImage(int label){
             Mat res = out[0];
             resize(res, res, Size(200, 200), 0, 0, CV_INTER_LINEAR);
             cvtColor(res, res, COLOR_BGR2GRAY);
-            string rpath = path + "pic/" + to_string(cnt) + ".jpg";
-    
+            string rpath = path + "pic/" + to_string(label) + "_" + to_string(cnt) + ".jpg";
             dbout << rpath << ";" << label << endl;
             imshow("face", res);
             imwrite(rpath, res);
@@ -162,10 +162,10 @@ pair<int, int> time_split(char* time_c){
 }
 int reg_mode(int s_sockfd){
     char req_msg[] = "REQ REG";
-    char recv_msg[MAXLINE];
+    char recv_msg[BUFF_SIZE];
     
     int student_num = 0;
-    char usr_name[MAXLINE];
+    char usr_name[BUFF_SIZE];
     
     // send request message
     if(-1 == write(s_sockfd, req_msg, strlen(req_msg)+1)){
@@ -174,7 +174,7 @@ int reg_mode(int s_sockfd){
     }
     
     // receive reg ok message
-    if((-1 == read(s_sockfd, recv_msg, 11)) && (0 != strncmp(recv_msg, "REG MODE OK", 11))){
+    if((-1 == read(s_sockfd, recv_msg, BUFF_SIZE)) && (0 != strncmp(recv_msg, "REG MODE OK", 12))){
         cout << "[ERROR] RECEIVE REG OK MSG FAILED" << endl;
         return -1;
     }
@@ -190,13 +190,10 @@ int reg_mode(int s_sockfd){
     }
     
     // RESULT MESSAGE
-    if(-1 == read(s_sockfd, recv_msg, 6)){
-        cout << "[ERROR] READ MSG FAILED" << endl;
-        return -1;
-    }
-    else{
+    if(-1 != read(s_sockfd, recv_msg, BUFF_SIZE)){
         if(0 == strncmp(recv_msg, "REG OK", 6)){
             cout << "[OK] REGISTERED " << endl;
+            cout << "[MSG] TRAINING... " << endl;
             getUserImage(student_num);
             train();
             return 1;
@@ -210,15 +207,19 @@ int reg_mode(int s_sockfd){
             return -1;
         }
     }
+    else{
+        cout << "[ERROR] READ MSG FAILED" << endl;
+        return -1;
+    }
 }
 int att_mode(int s_sockfd){
     // checking attendance about 1 minute
     clock_t delay = 60 * CLOCKS_PER_SEC;
     clock_t start = clock();
-    
+
     char req_msg[] = "REQ ATT";
     char recv_msg[MAXLINE];
-    
+
     if(-1 == write(s_sockfd, req_msg, strlen(req_msg)+1)){
         cout << "[ERROR] REQUEST ATTENDANCE CHECK MODE FAILED" << endl;
         return -1;
@@ -231,18 +232,18 @@ int att_mode(int s_sockfd){
         cap >> inp;
         imshow("window", inp);
         vector <Mat> out = faceDetect(inp);
-        
+
         if(!out.empty()){
             Mat res;
             cvtColor(out[0], res, COLOR_BGR2GRAY);
-            
+
             int label = -1;
             double confidence;
             model->predict(res, label, confidence);
-            
+
             string display = to_string(confidence) + "% Confience it is user";
             putText(inp, display, Point(100, 120), FONT_HERSHEY_COMPLEX, 1.2, Scalar::all(255));
-            
+
             if(-1 == label){
                 // label을 청구했을 때 이름 string 가져올 것
                 sprintf(req_msg, "%d", label);
@@ -268,7 +269,7 @@ int att_mode(int s_sockfd){
             putText(inp, "face not found", Point(250,450), FONT_HERSHEY_COMPLEX, 1.2, Scalar(0,255,0));
             imshow("facedetection", inp);
         }
-        
+
         if(waitKey(25) >= 0) break;
     }
     strncpy(req_msg, "KILL", 5);
@@ -276,7 +277,7 @@ int att_mode(int s_sockfd){
         cout << "[ERROR] REQUEST ATTENDANCE CHECK MODE FAILED" << endl;
         return -1;
     }
-    
+
     return 1;
 }
 int config_mode(int s_sockfd){
@@ -338,6 +339,7 @@ int main(int argc, char **argv){
         switch(menu_selector){
             case 1:{ // REGISTRATION MODE
                 reg_mode(server_sockfd);
+                cout << "Hello World!" << endl;
                 break;
             }
             case 2:{ // ATTENDANCE CHECK

@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   Info.plist
+   face_recognition
+
+   Created by Young-il Seo on 26/06/2019.
+   Copyright (c) 2019 Young-il Seo. All rights reserved.
+-->
 <plist version="1.0">
-<dict>
-	<key>NSCameraUsageDescription</key>
-	<string>${PRODUCT_NAME} Camera Usage</string>
-	<key>CFBundleName</key>
-	<string>cvModel</string>
-</dict>
+    <dict>
+    
+    </dict>
 </plist>

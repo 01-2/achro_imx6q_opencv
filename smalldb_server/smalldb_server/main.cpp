@@ -71,6 +71,7 @@ tm* get_current_time(){
     curr_tm = localtime(&curr_time);
     return curr_tm;
 }
+
 int req_mod_switch(char* msg){
     if(0 == strncmp(msg, "REQ REG", 7)) return 0;
     else if(0 == strncmp(msg, "REQ ATT", 7)) return 1;
@@ -80,8 +81,11 @@ int req_mod_switch(char* msg){
 }
 int input_file(){
     UserData temp;
-    std::ifstream inFile("user_db.dat");
+    std::ifstream inFile("user_db.ppap");
     if(!inFile.is_open()) return -1;
+    inFile.seekg(0, inFile.end);
+    long long length = inFile.tellg();
+    if(length == 0) return 1;
     while(!inFile.eof()){
         inFile >> temp.label >> temp.name;
         temp.checked = false;
@@ -95,8 +99,9 @@ int input_att_file(){
     std::pair<int, int> temp_pair;
     char temp_s[BUFF_SIZE];
     char temp_f[BUFF_SIZE];
-    std::ifstream attInFile("att_data.dat");
+    std::ifstream attInFile("att_data.ppap");
     if(!attInFile.is_open()) return -1;
+    // if(is_empty(inFile)) return 1;
     
     attInFile >> sys_ConfData.s_code >> temp_s >> temp_f >> sys_ConfData.s_num;
     
@@ -118,16 +123,16 @@ int input_att_file(){
     return 1;
 }
 void output_file(){
-    std::ofstream outFile("user_db.dat");
+    std::ofstream outFile("user_db.ppap");
     for(int i = 0; i < user_data.size(); i++)
-        outFile << user_data[i].label << user_data[i].name << std::endl;
+        outFile << user_data[i].label << " " << user_data[i].name << std::endl;
     outFile.close();
 }
 void output_att_file(){
-    std::ofstream attOutFile("att_data.dat");
+    std::ofstream attOutFile("att_data.ppap");
     attOutFile << sys_ConfData.s_code << " "
-    << sys_ConfData.s_time.hour << sys_ConfData.s_time.min << " "
-    << sys_ConfData.f_time.hour << sys_ConfData.f_time.min << " "
+    << sys_ConfData.s_time.hour << " " << sys_ConfData.s_time.min << " "
+    << sys_ConfData.f_time.hour << " " << sys_ConfData.f_time.min << " "
     << sys_ConfData.s_num << std::endl;
     
     for(int i = 0; i < att_data.size(); i++){
@@ -153,6 +158,8 @@ int main(void){
     char buff_rcv[BUFF_SIZE+5];
     char buff_snd[BUFF_SIZE+5];
     
+    input_file();
+    input_att_file();
     server_socket = socket(PF_INET, SOCK_STREAM, 0);
     
     if(-1 == server_socket){
@@ -169,45 +176,37 @@ int main(void){
         std::cout << "bind() error" << std::endl;
         exit(1);
     }
+    if(-1 == listen(server_socket, 5)){
+        std::cout << "wait mode error" << std::endl;
+        exit(1);
+    }
+    client_addr_size  = sizeof( client_addr);
+    client_socket     = accept( server_socket,
+                               (struct sockaddr*)&client_addr,
+                               (socklen_t*)&client_addr_size);
+    
+    if (-1 == client_socket){
+        std::cout << "client error" << std::endl;
+        exit(1);
+    }
     
     while(1){
-        if(-1 == listen(server_socket, 5)){
-            std::cout << "wait mode error" << std::endl;
-            exit(1);
-        }
-        client_addr_size  = sizeof( client_addr);
-        client_socket     = accept( server_socket,
-                                   (struct sockaddr*)&client_addr,
-                                   (socklen_t*)&client_addr_size);
-        
-        if (-1 == client_socket){
-            std::cout << "client error" << std::endl;
-            exit(1);
-        }
-        
         /* mode select
          1. REGISTRATION MODE
-            REQ REG
-         
          2. ATTENDANCE CHECK
-            REQ ATT
-         
          3. CONFIGURATION MODE
-            REQ CONFIG
-         
          4. EXIT
-            EXIT
          */
-        
         read(client_socket, buff_rcv, BUFF_SIZE);
         printf("receive: %s\n", buff_rcv);
         mod_sw = req_mod_switch(buff_rcv);
-        
+
         switch(mod_sw){
             // case 0:{ -> ???? fookin compile error :(
             case 0:{
                 strcpy(buff_snd, "REG MODE OK");
-                if((-1 == write(client_socket, buff_snd, strlen(buff_snd) + 1)) || ( -1 == input_file())){
+                if((-1 == write(client_socket, buff_snd, strlen(buff_snd) + 1))
+                   || (-1 == input_file())){
                     std::cout << "[ERROR] REPLY REG MODE MSG FAILED" << std::endl;
                     return -1;
                 }
@@ -218,8 +217,8 @@ int main(void){
                 int usr_len = 0;
                 UserData temp_user;
                 temp_user.label = atoi(strtok(buff_rcv, " "));
-                usr_len = atoi(strtok(buff_rcv, " "));
-                strncpy(temp_user.name, strtok(NULL, " "), usr_len);
+                usr_len = atoi(strtok(NULL, " "));
+                strncpy(temp_user.name, strtok(NULL, " "), usr_len + 1);
                 
                 if(-1 != find_duplicated(temp_user.label)){
                     user_data.push_back(temp_user);
@@ -230,6 +229,7 @@ int main(void){
                     strcpy(buff_snd, "REG DP");
                     write(client_socket, buff_snd, strlen(buff_snd)+1);
                 }
+                std::cout << "REG COMPLETE" << std::endl;
                 break;
             }
             case 1:{
@@ -271,17 +271,21 @@ int main(void){
                 break;
             }
             case 2:{
-                sprintf(buff_snd, "%s %d%d %d%d %d",
-                        sys_ConfData.s_code, sys_ConfData.s_time.hour,
-                        sys_ConfData.s_time.min, sys_ConfData.f_time.hour,
-                        sys_ConfData.f_time.min, sys_ConfData.s_num);
-                write(client_socket, buff_snd, strlen(buff_snd)+1);
+                sprintf(buff_snd, "%s %d %d %d %d %d", sys_ConfData.s_code,
+                        sys_ConfData.s_time.hour, sys_ConfData.s_time.min,
+                        sys_ConfData.f_time.hour, sys_ConfData.f_time.min,
+                        sys_ConfData.s_num);
+                if(-1 == write(client_socket, buff_snd, strlen(buff_snd)+1)){
+                    std::cout << "[ERROR] SEND CONFIG ERROR" << std::endl;
+                    return -1;
+                }
                 break;
             }
-            default:{
+            case 3:{
                 output_file();
                 output_att_file();
                 close(client_socket);
+                return -1;
                 break;
             }
         }
