@@ -32,7 +32,7 @@
 			<key>uniqueIdentifier</key>
 			<string>7754FABD-5464-49B5-957A-BF617376FCB9</string>
 		</dict>
-		<key>95E4105D-4DCB-410E-9F7D-AB9B3C6D6078</key>
+		<key>E39CE456-6BF6-479A-89EA-146AA3251A2D</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -41,7 +41,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
 			<key>fileName</key>
-			<string>95E4105D-4DCB-410E-9F7D-AB9B3C6D6078.xcactivitylog</string>
+			<string>E39CE456-6BF6-479A-89EA-146AA3251A2D.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -50,13 +50,13 @@
 			<key>signature</key>
 			<string>face_recognition-cxxmoomwehuqdobbymifxsttkarr</string>
 			<key>timeStartedRecording</key>
-			<real>583054884.809793</real>
+			<real>583144225.51999199</real>
 			<key>timeStoppedRecording</key>
-			<real>583054886.67190599</real>
+			<real>583144227.27194703</real>
 			<key>title</key>
 			<string>Build target face_recognition</string>
 			<key>uniqueIdentifier</key>
-			<string>95E4105D-4DCB-410E-9F7D-AB9B3C6D6078</string>
+			<string>E39CE456-6BF6-479A-89EA-146AA3251A2D</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

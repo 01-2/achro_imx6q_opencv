@@ -1,13 +1,14 @@
 dependencies: \
   /Users/yiseo/repository/achro_imx6q_opencv/face_recognition/face_recognition/main.cpp \
-  /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/opencv.hpp \
-  /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/opencv_modules.hpp \
+  /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/highgui/highgui.hpp \
+  /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/highgui.hpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/core.hpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/core/cvdef.h \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/core/hal/interface.h \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/core/version.hpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/core/base.hpp \
+  /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/opencv_modules.hpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/core/cvstd.hpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/core/neon_utils.hpp \
@@ -27,6 +28,13 @@ dependencies: \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/core/utility.hpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/core/optim.hpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/core/ovx.hpp \
+  /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/imgcodecs.hpp \
+  /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/videoio.hpp \
+  /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/imgproc/imgproc.hpp \
+  /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/imgproc.hpp \
+  /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/objdetect.hpp \
+  /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp \
+  /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/opencv.hpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/calib3d.hpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/features2d.hpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/flann/miniflann.hpp \
@@ -70,14 +78,8 @@ dependencies: \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/flann/index_testing.h \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/flann/timer.h \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/flann/sampling.h \
-  /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/highgui.hpp \
-  /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/imgcodecs.hpp \
-  /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/videoio.hpp \
-  /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/imgproc.hpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/ml.hpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/ml/ml.inl.hpp \
-  /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/objdetect.hpp \
-  /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/photo.hpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/shape.hpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/shape/emdL1.hpp \
@@ -119,8 +121,6 @@ dependencies: \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/videostab/deblurring.hpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/videostab/wobble_suppression.hpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/videostab/ring_buffer.hpp \
-  /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/highgui/highgui.hpp \
-  /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/imgproc/imgproc.hpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/face.hpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/face/predict_collector.hpp \
   /usr/local/Cellar/opencv/4.1.0_2/include/opencv4/opencv2/face/facerec.hpp \
