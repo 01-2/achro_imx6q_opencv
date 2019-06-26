@@ -53,17 +53,6 @@ std::vector<UserData> user_data;
 std::vector<AttData> att_data;
 ConfData sys_ConfData;
 
-std::pair<int, int> time_split(char* time_c){
-    int temp = 0;
-    std::pair <int, int> result;
-    
-    temp = atoi(time_c);
-    result.first = temp / 100;
-    temp = temp - result.first * 100;
-    result.second = temp;
-    
-    return result;
-}
 tm* get_current_time(){
     struct tm *curr_tm;
     time_t curr_time;
@@ -96,22 +85,15 @@ int input_file(){
 }
 int input_att_file(){
     AttData temp;
-    std::pair<int, int> temp_pair;
-    char temp_s[BUFF_SIZE];
-    char temp_f[BUFF_SIZE];
+
     std::ifstream attInFile("att_data.ppap");
     if(!attInFile.is_open()) return -1;
     // if(is_empty(inFile)) return 1;
     
-    attInFile >> sys_ConfData.s_code >> temp_s >> temp_f >> sys_ConfData.s_num;
-    
-    temp_pair = time_split(temp_s);
-    sys_ConfData.s_time.hour = temp_pair.first;
-    sys_ConfData.s_time.min = temp_pair.second;
-    
-    temp_pair = time_split(temp_f);
-    sys_ConfData.f_time.hour = temp_pair.first;
-    sys_ConfData.f_time.min = temp_pair.second;
+    attInFile >> sys_ConfData.s_code >>
+    sys_ConfData.s_time.hour >> sys_ConfData.s_time.min >>
+    sys_ConfData.f_time.hour >> sys_ConfData.f_time.min >>
+    sys_ConfData.s_num;
     
     while(!attInFile.eof()){
         //year:mon:mday:hour:min:sec:label

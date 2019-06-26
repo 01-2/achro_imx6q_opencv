@@ -149,17 +149,6 @@ void welcome_menu(){
     cout << "3. CONFIGURATION INFO" << endl;
     cout << "4. EXIT" << endl;
 }
-pair<int, int> time_split(char* time_c){
-    int temp = 0;
-    pair <int, int> result;
-    
-    temp = atoi(time_c);
-    result.first = temp / 100;
-    temp = temp - result.first * 100;
-    result.second = temp;
-    
-    return result;
-}
 int reg_mode(int s_sockfd){
     char req_msg[] = "REQ REG";
     char recv_msg[BUFF_SIZE];
@@ -283,7 +272,6 @@ int att_mode(int s_sockfd){
 int config_mode(int s_sockfd){
     char req_msg[] = "REQ CONFIG";
     char recv_msg[MAXLINE];
-    pair<int, int> temp_time;
     
     if(-1 == write(s_sockfd, req_msg, strlen(req_msg)+1)){
         cout << "[ERROR] REQUEST CONFIG INFO FAILED" << endl;
@@ -298,14 +286,14 @@ int config_mode(int s_sockfd){
     strncpy(sys_ConfData.s_code, token, 7);
     
     token = strtok(NULL, " ");          // start time
-    temp_time = time_split(token);
-    sys_ConfData.s_time.hour = temp_time.first;
-    sys_ConfData.s_time.min = temp_time.second;
+    sys_ConfData.s_time.hour = atoi(token);
+    token = strtok(NULL, " ");
+    sys_ConfData.s_time.min = atoi(token);
     
     token = strtok(NULL, " ");          // finish time
-    temp_time = time_split(token);
-    sys_ConfData.f_time.hour = temp_time.first;
-    sys_ConfData.f_time.min = temp_time.second;
+    sys_ConfData.f_time.hour = atoi(token);
+    token = strtok(NULL, " ");          // finish time
+    sys_ConfData.f_time.min = atoi(token);
     
     token = strtok(NULL, " ");          // number of students
     sys_ConfData.s_num = atoi(token);
@@ -339,7 +327,6 @@ int main(int argc, char **argv){
         switch(menu_selector){
             case 1:{ // REGISTRATION MODE
                 reg_mode(server_sockfd);
-                cout << "Hello World!" << endl;
                 break;
             }
             case 2:{ // ATTENDANCE CHECK
